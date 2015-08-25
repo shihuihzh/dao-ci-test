@@ -1,4 +1,4 @@
-image: shihuihzh/dao-ci-test
+image: shihuihzh/dao-ci-test:v1
 services:
 
 env:
