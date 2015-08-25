@@ -1,22 +1,14 @@
-image: shihuihzh/dao-ci-test
+image: daocloud/ci-node:0.8
+
 services:
+    - mongodb
 
 env:
-    - MYENV = "hellohellohellohello"
+    - MONGODB_INSTANCE_NAME = "test"
 
 install:
-    - echo $MYENV
-    - echo "This is an install segment"
-    - echo "Here, we usually run scripts to setup a base environment"
-
-before_script:
-    - echo $MYENV
-    - echo "This is an before_script segment"
-    - echo "Here, we usually run scripts to prepare our test"
+    - npm install -g mocha
 
 script:
-    - echo $MYENV
-    - echo "This is an script segment"
-    - echo "Run test cases here"
-    - echo ""
-    - echo "Below shows how to use services"
+    - npm install
+    - mocha

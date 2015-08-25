@@ -1,3 +1,3 @@
-FROM busybox
+FROM node:0.8-onbuild
 
-CMD ["env"]
+EXPOSE 80
