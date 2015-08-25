@@ -2,7 +2,7 @@ image: shihuihzh/dao-ci-test
 services:
 
 env:
-    - MYENV = "hellohellohello"
+    - MYENV = "hellohellohellohello"
 
 install:
     - echo $MYENV
